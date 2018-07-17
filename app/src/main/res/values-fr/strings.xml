@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quizzes</string>
+    <string name="add">Ajouter</string>
+    <string name="add_question">Ajouter une question</string>
+    <string name="add_quiz">Ajouter un quiz</string>
+    <string name="already_have_account">Avez-vous déjà un compte? Connectez ici.</string>
+    <string name="are_you_sure">Êtes-vous certain?</string>
+    <string name="cancel">Annulez</string>
+    <string name="changes_will_be_lost">Lorsque vous retournez au menu, les changements apportés au quiz seront perdus.</string>
+    <string name="correct_answer">Bonne réponse!</string>
+    <string name="correct_answer_chosen">Bien! Tapoter sur le bord droit de l\'écran afin de continuer.</string>
+    <string name="create_account">Créer un compte</string>
+    <string name="delete">Suprimmer</string>
+    <string name="delete_question_message">Lorsque vous supprimez cette question, vous ne pourrez pas la récupérer.</string>
+    <string name="delete_quiz_message">Lorsque vous supprimez ce quiz, vous ne pourrez pas le récupérer.</string>
+    <string name="edit">Modifier</string>
+    <string name="email">Courriel</string>
+    <string name="email_taken">Ce courriel est déjà utilisé.</string>
+    <string name="false_answer">Réponse fausse</string>
+    <string name="finish">Finir</string>
+    <string name="incorrect_answer_chosen">Pas la bonne réponse. Tapoter sur le bord droit de l\'écran afin de continuer.</string>
+    <string name="login">Accéder</string>
+    <string name="logo">Logo</string>
+    <string name="no_changes_will_be_made">Si vous continuez, il n\'y aura pas de changements.</string>
+    <string name="ok">OK</string>
+    <string name="password">Mot de passe</string>
+    <string name="question">Question</string>
+    <string name="question_already_exists">Cette question existe déjà.</string>
+    <string name="quiz_already_exists">Ce quiz existe déjà.</string>
+    <string name="quiz_empty">Le quiz est vide</string>
+    <string name="quiz_finished">Quiz fini!</string>
+    <string name="quiz_name">Nom du quiz</string>
+    <string name="retry_quiz">Refaire le quiz</string>
+    <string name="return_to_menu">Retourner vers le menu</string>
+    <string name="sign_up">S\'inscrire</string>
+    <string name="two_same_questions">Toutes les questions doivent être différentes.</string>
+    <string name="two_same_quizzes">Tous les quiz doivent être différents.</string>
+    <string name="username">Nom d\'utilisateur</string>
+    <string name="username_taken">Le nom d\'utilisateur donné est déjà utilisé.</string>
+    <string name="valid_email">S\'il vous plaît utilisez un courriel valide.</string>
+    <string name="quiz_must_have_questions">Le quiz doit avoir des questions.</string>
+</resources>

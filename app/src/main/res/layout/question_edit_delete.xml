@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_question_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center_horizontal"
+                android:text="QuestionText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_correct_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center_horizontal"
+                android:text="CorrectAnswer"
+                android:textColor="@color/greenForCorrect"/>
+
+            <TextView
+                android:id="@+id/tv_false_answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center_horizontal"
+                android:text="FalseAnswer1"
+                android:textColor="@color/redForWrong"/>
+
+            <TextView
+                android:id="@+id/tv_false_answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center_horizontal"
+                android:text="FalseAnswer2"
+                android:textColor="@color/redForWrong"/>
+
+            <TextView
+                android:id="@+id/tv_false_answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center_horizontal"
+                android:text="FalseAnswer3"
+                android:textColor="@color/redForWrong"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="editQuestion"
+            android:text="@string/edit" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="deleteQuestion"
+            android:text="@string/delete" />
+
+    </LinearLayout>
+
+</LinearLayout>

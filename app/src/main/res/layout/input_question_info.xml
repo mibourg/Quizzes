@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_question_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:hint="@string/question"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/et_correct_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/correct_answer"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/et_false_answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/false_answer"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/et_false_answer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/false_answer"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/et_false_answer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/false_answer"
+        android:gravity="center"/>
+
+</LinearLayout>
