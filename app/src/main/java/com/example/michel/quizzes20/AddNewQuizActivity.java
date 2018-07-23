@@ -13,7 +13,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class AddNewQuizActivity extends AppCompatActivity {
 
@@ -148,17 +150,21 @@ public class AddNewQuizActivity extends AppCompatActivity {
                     Question questionToAdd = new Question(questionNameEditText.getText().toString(), answers);
 
                     boolean questionAlreadyExists = false;
-
                     for (Question question : questionsInQuizBeingCreated) {
                         if (question.getQuestionText().equals(questionToAdd.getQuestionText())) {
                             questionAlreadyExists = true;
                         }
                     }
 
-                    if (!questionAlreadyExists) {
+                    HashSet<String> answerSet = new HashSet<>();
+                    for (Answer answer : answers) {
+                        answerSet.add(answer.getAnswerText());
+                    }
+
+                    if (!questionAlreadyExists && answerSet.size() == answers.size()) {
                         questionsInQuizBeingCreated.add(questionToAdd);
                         updateQuestionsHolderLinearLayout();
-                    } else {
+                    } else if (questionAlreadyExists) {
                         AlertDialog.Builder questionAlreadyExistsDialog = new AlertDialog.Builder(AddNewQuizActivity.this);
                         questionAlreadyExistsDialog.setIcon(android.R.drawable.ic_dialog_alert);
                         questionAlreadyExistsDialog.setTitle(R.string.question_already_exists);
@@ -170,7 +176,20 @@ public class AddNewQuizActivity extends AppCompatActivity {
                             }
                         });
                         questionAlreadyExistsDialog.create().show();
+                    } else if (answerSet.size() < answers.size()) {
+                        AlertDialog.Builder duplicateAnswerDialog = new AlertDialog.Builder(AddNewQuizActivity.this);
+                        duplicateAnswerDialog.setIcon(android.R.drawable.ic_dialog_alert);
+                        duplicateAnswerDialog.setTitle(R.string.duplicate_answer);
+                        duplicateAnswerDialog.setMessage(R.string.unique_answers_only);
+                        duplicateAnswerDialog.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        });
+                        duplicateAnswerDialog.create().show();
                     }
+
                 } else {
                     dialog.cancel();
                 }

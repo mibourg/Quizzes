@@ -39,4 +39,6 @@
     <string name="quiz_empty">Quiz Is Empty</string>
     <string name="no_changes_will_be_made">If you proceed, no changes will be made.</string>
     <string name="quiz_must_have_questions">The created quiz must have questions.</string>
+    <string name="duplicate_answer">The question contains a duplicate answer.</string>
+    <string name="unique_answers_only">Only unique answers should be used.</string>
 </resources>
